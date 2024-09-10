@@ -88,6 +88,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; /* Asegurar que el botón esté sobre la imagen */
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff6347; /* Color de fondo */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones */
+}
+
+#play-button:hover {
+    background-color: #ff4500; /* Color de fondo al pasar el cursor */
+    transform: translate(-50%, -50%) scale(1.05); /* Efecto de agrandamiento */
 }
 
 /* Media Queries para dispositivos móviles */
