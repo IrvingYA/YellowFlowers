@@ -83,7 +83,7 @@ body {
 }
 
 /* Media Queries para dispositivos móviles */
-@media (max-width: 968px) {
+@media (max-width: 1480px) {
     .central-flower {
         width: 700px; /* Tamaño más pequeño para la flor central en pantallas pequeñas */
         height: 700px;
@@ -94,13 +94,13 @@ body {
     }
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 968px) {
     .central-flower {
-        width: 500px; /* Tamaño aún más pequeño para la flor central en pantallas muy pequeñas */
-        height: 500px;
+        width: 400px; /* Tamaño aún más pequeño para la flor central en pantallas muy pequeñas */
+        height: 400px;
     }
 
     .texto {
-        font-size: 25px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+        font-size: 20px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
     }
 }
