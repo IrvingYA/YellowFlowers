@@ -83,7 +83,7 @@ body {
 }
 
 /* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .central-flower {
         width: 500px; /* Tamaño más pequeño para la flor central en pantallas pequeñas */
         height: 500px;
