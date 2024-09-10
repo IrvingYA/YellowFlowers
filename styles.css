@@ -90,7 +90,7 @@ body {
     }
 
     .texto {
-        font-size: 25px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        font-size: 16px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
     }
 }
 
@@ -101,6 +101,6 @@ body {
     }
 
     .texto {
-        font-size: 20px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+        font-size: 16px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
     }
 }
