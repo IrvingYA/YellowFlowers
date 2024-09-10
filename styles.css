@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0e68c; /* Color amarillo */
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden; /* Evitar que las imágenes se salgan del margen */
+}
+
+.animation-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evitar que las imágenes se salgan del margen */
+}
+
+.flower {
+    width: 100px; /* Tamaño pequeño para las flores que hacen pop up */
+    height: 100px;
+    background: url('flower.png') no-repeat center center; /* Cambia 'flower.png' por la ruta de tu imagen */
+    background-size: contain;
+    position: absolute;
+    animation: pop 2s ease-out, sway 2s infinite; /* Añadir la animación de balanceo */
+    z-index: 0; /* Asegurar que las flores estén detrás de la imagen central */
+}
+
+.central-flower {
+    width: 500px; /* Tamaño más grande para la flor central */
+    height: 500px;
+    background: url('principal.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegurar que la imagen central esté sobre las flores */
+    /*animation: rotate 5s linear infinite; /* Añadir rotación */
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0; /* Añadir transición de opacidad */
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+.texto {
+    font-style: italic;
+    font-size: 24px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegurar que el texto esté sobre la imagen */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .central-flower {
+        width: 200px; /* Tamaño más pequeño para la flor central en pantallas pequeñas */
+        height: 200px;
+    }
+
+    .texto {
+        font-size: 18px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .central-flower {
+        width: 150px; /* Tamaño aún más pequeño para la flor central en pantallas muy pequeñas */
+        height: 150px;
+    }
+
+    .texto {
+        font-size: 16px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+}
