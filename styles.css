@@ -82,6 +82,14 @@ body {
     z-index: 2; /* Asegurar que el texto esté sobre la imagen */
 }
 
+#play-button {
+    position: absolute;
+    top: 70%; /* Ajusta este valor según sea necesario */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegurar que el botón esté sobre la imagen */
+}
+
 /* Media Queries para dispositivos móviles */
 @media (max-width: 1480px) {
     .central-flower {
@@ -91,6 +99,10 @@ body {
 
     .texto {
         font-size: 30px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    #play-button {
+        top: 75%; /* Ajusta este valor según sea necesario */
     }
 }
 
@@ -102,5 +114,9 @@ body {
 
     .texto {
         font-size: 20px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+
+    #play-button {
+        top: 80%; /* Ajusta este valor según sea necesario */
     }
 }
