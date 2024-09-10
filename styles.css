@@ -29,8 +29,8 @@ body {
 }
 
 .central-flower {
-    width: 550px; /* Tamaño más grande para la flor central */
-    height: 550px;
+    width: 500px; /* Tamaño más grande para la flor central */
+    height: 500px;
     background: url('principal.png') no-repeat center center;
     background-size: contain;
     position: absolute;
@@ -96,8 +96,8 @@ body {
 
 @media (max-width: 480px) {
     .central-flower {
-        width: 150px; /* Tamaño aún más pequeño para la flor central en pantallas muy pequeñas */
-        height: 150px;
+        width: 500px; /* Tamaño aún más pequeño para la flor central en pantallas muy pequeñas */
+        height: 500px;
     }
 
     .texto {
