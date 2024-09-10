@@ -76,7 +76,7 @@ body {
     font-style: italic;
     font-size: 30px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; /* Asegurar que el texto esté sobre la imagen */
