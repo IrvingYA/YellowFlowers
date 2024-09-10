@@ -85,9 +85,9 @@ body {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 1968px) {
     .central-flower {
-        width: 1700px; /* Tamaño más pequeño para la flor central en pantallas pequeñas */
+        width: 700px; /* Tamaño más pequeño para la flor central en pantallas pequeñas */
         height: 700px;
-        border: 20px solid red;
+        border: 250px solid red;
     }
 
     .texto {
